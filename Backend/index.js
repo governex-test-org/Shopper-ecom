@@ -20,7 +20,7 @@ app.use(cookieParser());
 //     origin: ['https://shopper-ecommerce-admin-dun.vercel.app'],
 //     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 // }));
-app.use(cors());
+app.use(cors());        // when frontend and backend are on different domains
 app.use('/images', express.static('upload/images'))  // serve the files available in upload/images folder on images route
 
 // Connecting Database through Mongoose
